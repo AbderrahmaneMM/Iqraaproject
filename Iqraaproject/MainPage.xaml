@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Iqraaproject.MainPage"         Title="إقرأ">
+    <VerticalStackLayout>
+        <Label 
+        Text="الصفحة الرئيسية"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+        <Button 
+           Text="ليلى و الذئب"
+           TranslationY="150"
+           BackgroundColor="Red"
+           TextColor="Black"
+           FontSize="20"
+           Clicked="Layla_Clicked"/>
+        <Button 
+           Text="الأرنب و السلحفاة"
+           TranslationY="200"  
+           BackgroundColor="Green"
+           FontSize="20"
+           TextColor="White"
+        Clicked="Arnab_Clicked"/>
+        <Button 
+           Text="النملة و الصرصور"
+           TranslationY="250" 
+           BackgroundColor="SaddleBrown"
+           FontSize="20"
+           TextColor="ForestGreen"
+        Clicked="Namla_Clicked"/>
+    </VerticalStackLayout>
+
+</ContentPage>

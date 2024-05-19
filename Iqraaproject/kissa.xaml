@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Iqraaproject.kissa"
+            >
+
+    <ContentPage.Content>
+        <StackLayout 
+            VerticalOptions="Start"
+            HorizontalOptions="FillAndExpand"
+            BackgroundColor="Pink">
+            <Button 
+                x:Name="Audio" 
+                Text="استماع" 
+                    WidthRequest="70"  
+                    TranslationX="135"
+                  TranslationY="40"
+                     IsEnabled="False"
+                    Clicked="Audio_Clicked" HorizontalOptions="Center"/>
+            <Button x:Name="Pause"
+                    Text="توقف" 
+                    WidthRequest="70"  
+                    TranslationY="-5"
+                     IsEnabled="False"
+                   Clicked="Pause_Clicked"/>
+            <Button x:Name="repeat"
+                Text="اعادة" 
+                WidthRequest="70" 
+                TranslationX="-135"
+                TranslationY="-47"
+                IsEnabled="False"
+                Clicked="repeat_Clicked"/>
+            <Image  
+                    x:Name="safha"
+                    WidthRequest="350" 
+                    HeightRequest="450"  />
+            <Label x:Name="l"
+                   Text = "الصفحة رقم:0"
+                   TextColor="White"
+                   Margin="155,0,50,0"
+                   FontSize="17" />
+            <Button x:Name="strt"
+                    Text="البداية"
+                    WidthRequest="160"   
+                    HeightRequest="35"   
+                    BackgroundColor="Yellow"
+                   Margin="0,0,5,0"
+                    TranslationX="85"
+                    TranslationY="10"
+                    Clicked="strt_Clicked"/>
+            <Button x:Name="Home"
+                     Text="الصفحة الرئيسية" 
+                    TextColor="White" 
+                    WidthRequest="160" 
+                    HeightRequest="35"  
+                    BackgroundColor="Green"
+                    Margin="0,5,0,0"
+                    TranslationX="-85"
+                    TranslationY="-37"
+                    Clicked="Home_Clicked"
+                    />
+            <Button x:Name="next"
+                    Text="--))"
+                    TextColor="White"
+                    BackgroundColor="Blue"
+                    WidthRequest="45" 
+                    HeightRequest="650"
+                  Margin="385,-660,0,0"
+                    Clicked="next_Clicked" FontSize="Body" />
+            <Button x:Name="pres"
+                     Text="((---"
+                     TextColor="White"
+                     BackgroundColor="#FF0000FF"
+                     WidthRequest="45" 
+                     HeightRequest="650"
+                      Margin="0,-650,385,0"
+                    Clicked="pres_Clicked"
+                    IsEnabled="False" FontSize="Body"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
